@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  /* chrome */
+  /* chrome   */
   .sidebar::-webkit-scrollbar {
     width: 0px;
   }
