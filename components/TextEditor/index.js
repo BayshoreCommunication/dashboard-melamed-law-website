@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { use, useEffect } from "react";
 import StarterKit from "@tiptap/starter-kit";
 import { EditorContent, useEditor } from "@tiptap/react";
 import ListItem from "@tiptap/extension-list-item";
@@ -73,13 +73,9 @@ const TextEditor = ({ value, setValue }) => {
       // setValue(wrappedHtml);;
     },
   });
-
   useEffect(() => {
-    // this is just an example. do whatever you want to do here
-    // to retrieve your editors content from somewhere
-
     editor?.commands.setContent(value);
-  }, [editor?.commands, value]);
+  }, [editor]);
 
   return (
     <div>
